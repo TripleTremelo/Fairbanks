@@ -1,0 +1,3 @@
+///Reset SHOT.
+
+shot=false
