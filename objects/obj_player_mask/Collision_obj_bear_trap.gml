@@ -7,7 +7,7 @@ if other.frame=0
 	if instance_exists(obj_player)
 	{
 		part_particles_create(global.ptcl_depth_neg_100,obj_player.x,obj_player.y,global.blood_splat,12)
-		obj_player.player_hp-=50
+		obj_player.player_hp-=51
 		obj_player.scale=1.15
 	}
 }

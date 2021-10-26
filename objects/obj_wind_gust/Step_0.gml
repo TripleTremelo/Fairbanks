@@ -32,7 +32,7 @@ if blowing_hard
 	else
 	{
 		//PLAYER BEING BLOWN BACK.
-		if !instance_exists(obj_player_tent) {with (obj_player) {x-=2.75 can_move_player=false} destroy_stuff()} //Blow Player Back.
+		if !instance_exists(obj_player_tent) {with (obj_player) {x-=5 can_move_player=false} destroy_stuff()} //Blow Player Back.
 		can_tent=false
 	}
 	

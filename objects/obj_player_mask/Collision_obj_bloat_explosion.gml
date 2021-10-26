@@ -8,7 +8,7 @@ if !audio_is_playing(snd_player_damage)
 if instance_exists(obj_player)
 {
 	part_particles_create(global.ptcl_depth_neg_100,obj_player.x,obj_player.y,global.blood_splat,10)
-	obj_player.player_hp-=50
+	obj_player.player_hp-=51
 	obj_player.scale=choose(1,1.05,1.1)
 }
 
