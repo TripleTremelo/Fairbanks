@@ -2,6 +2,7 @@
 
 if keyboard_check_pressed(ord("F")) {if window_get_fullscreen() {window_set_fullscreen(0)} else {window_set_fullscreen(1)}}
 
+/*
 
 //CHEATS.
 if keyboard_check_pressed(ord("M")) {if !global.show_masks {global.show_masks=true} else {global.show_masks=false}}
