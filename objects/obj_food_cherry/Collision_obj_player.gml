@@ -18,6 +18,7 @@ if marked
 		{
 			if !collected
 			{
+				if instance_exists(obj_player) {with (obj_player) {player_hp+=15}}
 				global.food_in_stomach+=1
 				global.touching_food=false
 				

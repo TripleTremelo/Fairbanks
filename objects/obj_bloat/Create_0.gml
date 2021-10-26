@@ -19,5 +19,6 @@ spewed=false
 spd_change=1.5+random(1.2)
 max_spd=0
 chase_count=0
+if chance(4) {chasing=true}
 
 alarm[1]=60+irandom(60)

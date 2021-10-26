@@ -15,11 +15,12 @@ if hit_points > 0
 if hit_points <= 0
 {
 	play_sound(0,snd_rock_break,0,0.17,0.95,0.1,250,400,1,80)
-	part_particles_create(global.ptcl_depth_neg_100,x-5+random(10),y-2+random(4),global.rock_cloud,6+irandom(1))
+	part_particles_create(global.ptcl_depth_neg_100,x-5+random(10),y-2+random(4),global.rock_cloud,11)
+	part_particles_create(global.ptcl_depth_neg_8000,x,y+2,global.rock_spark,8)
 	
 	obj=instance_create_layer(x,y,"Main",obj_rocks_pickup) obj.direction=180
 	obj=instance_create_layer(x,y,"Main",obj_rocks_pickup) obj.direction=0
 	
-	with (obj_mask) {instance_destroy()}
+	if instance_exists(obj_mask) {with (obj_mask) {instance_destroy()}}
 	instance_destroy()
 }

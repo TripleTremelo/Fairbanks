@@ -22,7 +22,7 @@ if hit_points <= 0
 		if instance_exists(obj_player) {if x > obj_player.x {alarm[0]=1} else {alarm[1]=1}}
 		if instance_exists(obj_player_menu) {if x > obj_player_menu.x {alarm[0]=1} else {alarm[1]=1}}
 		
-		with (obj_mask) {instance_destroy()}
+		if instance_exists(obj_mask) {with (obj_mask) {instance_destroy()}}
 		
 		mask=spr_blank
 	}

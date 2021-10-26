@@ -13,3 +13,5 @@ shake_y=0
 shake_amt=0
 tip_rate=0
 yy=y+5
+
+if chance(4) {instance_destroy()}

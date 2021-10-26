@@ -15,6 +15,9 @@ tip_rate=0
 yy=y
 shadow_length=27+random(2)
 shadow_alpha=0.11+random(0.02)
+obj_mask=noone
+
+if chance(8) {instance_destroy()}
 
 make_mask_object(x-2,y-12,4,1)
 

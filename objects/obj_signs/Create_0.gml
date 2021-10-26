@@ -9,3 +9,4 @@ if x=2400 {frame=1}
 if x=3600 {frame=2}
 if x=4800 {frame=3}
 if x=6000 {frame=4}
+if x=7150 {frame=5}

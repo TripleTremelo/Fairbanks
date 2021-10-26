@@ -45,7 +45,7 @@ if blowing_hard
 }
 else
 {
-	if white_alpha=1 {if !instance_exists(obj_player_tent) {instance_create_layer(x+30,y,"Main",obj_gen_everything) with (obj_player) {can_move_player=true}}}
+	if white_alpha=1 {if !instance_exists(obj_player_tent) {instance_create_layer(x+50,y,"Main",obj_gen_everything) with (obj_player) {can_move_player=true}}}
 	if white_alpha=1 {if instance_exists(obj_player_tent)  {with (obj_player_tent) {instance_destroy()}  with (obj_player) {can_move_player=true} }}
 	
 	if white_alpha > -3 {white_alpha-=0.02}

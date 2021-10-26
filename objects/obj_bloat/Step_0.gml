@@ -16,7 +16,7 @@ if chasing
 	if chase_count > 800 {chasing=false}
 }
 
-if hp < 2 {chasing=true}
+if hp < 1.5 {chasing=true}
 
 if on_screen() {mask=sprite_index} else {mask=spr_blank}
 if scale > 1 {scale-=0.05}

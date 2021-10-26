@@ -1,6 +1,6 @@
 ///Create.
 
-global.bullets=5
+global.bullets=6
 global.rocks=0
 global.cloth=0
 global.wood=0

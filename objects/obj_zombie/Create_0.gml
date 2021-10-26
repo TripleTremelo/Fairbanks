@@ -20,6 +20,7 @@ spd_change=1.5+random(0.3)
 max_spd=0
 chase_distance=120
 chase_count=0
+if chance(3) {chasing=true}
 
 alarm[1]=60+irandom(60)
 

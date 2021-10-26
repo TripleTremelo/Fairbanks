@@ -10,7 +10,7 @@ if direction > 90 && direction < 270 {x_scale=-1} else {x_scale=1}
 
 if instance_exists(obj_player) 
 {
-	if obj_player.crouching {chase_distance=90} else {chase_distance=130}
+	if obj_player.crouching {chase_distance=75} else {chase_distance=125}
 	
 	if point_distance(x,y,obj_player.x,obj_player.y) < chase_distance {chasing=true}
 }
@@ -33,7 +33,7 @@ else
 if chasing
 {
 	if !growled {alarm[0]=1 growled=true}
-	speed=wave(1.1,1.28,spd_change,0)
+	speed=wave(1.02,1.15,spd_change,0)
 	if dir_count mod 18 = 0
 	{
 		if instance_exists(obj_player) {direction=point_direction(x,y,obj_player.x,obj_player.y)}

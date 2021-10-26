@@ -21,5 +21,6 @@ max_spd=0
 chase_distance=120
 chase_count=0
 growled=false
+x_scale=1
 
 alarm[1]=60+irandom(60)

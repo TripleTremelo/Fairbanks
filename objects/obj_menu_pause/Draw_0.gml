@@ -4,9 +4,15 @@ draw_set_alpha(1)
 draw_set_color(make_color_hsv(143,13,251))
 draw_rectangle(x-200,pause_y-200,x+200,pause_y+200,0)
 
+//PAUSE.
 set_text(fnt_roboto,0.91,make_color_hsv(148,50,252),fa_center,fa_middle)
 draw_text(x,pause_y-21,"P A U S E")
 
+//CRAFTING HINT.
+set_text(fnt_chava_6,0.87,make_color_hsv(160,100,240),fa_center,fa_middle)
+draw_text(x,pause_y-75,"TENT  = WOOD AND COTTON")
+draw_text(x,pause_y-65,"HEALTH  = COTTON AND ROCKS")
+draw_text(x,pause_y-55,"BULLETS  = ROCKS AND WOOD")
 
 //MAIN MENU CHOICES.
 var m;

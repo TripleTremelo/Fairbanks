@@ -19,6 +19,5 @@ if hit_points <= 0
 	obj=instance_create_layer(x,y,"Main",obj_food_cherry)
 	obj.direction=270
 	
-	with (obj_mask) {instance_destroy()}
 	instance_destroy()
 }

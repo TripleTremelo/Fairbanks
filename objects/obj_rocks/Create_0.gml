@@ -12,11 +12,9 @@ shake_x=0
 shake_y=0
 shake_amt=0
 tip_rate=0
+obj_mask=noone
 
 make_mask_object(x-5,y-11,12,6)
-
-
-
 
 /*
 

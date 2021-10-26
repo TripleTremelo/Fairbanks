@@ -42,8 +42,8 @@ instance_create_layer(220,135,"Main",obj_trees)
 instance_create_layer(150,60,"Main",obj_rocks)
 instance_create_layer(140,85,"Main",obj_rocks)
 
-instance_create_layer(156,146,"Main",obj_cloth)
-instance_create_layer(179,158,"Main",obj_cloth)
+instance_create_layer(145,146,"Main",obj_cloth)
+instance_create_layer(188,162,"Main",obj_cloth)
 
 instance_create_layer(190,140,"Main",obj_food_cherry)
 

@@ -1,6 +1,6 @@
 ///Text Up.
 
-if alpha < 11
+if alpha < 16
 {
 	if alpha=0
 	{

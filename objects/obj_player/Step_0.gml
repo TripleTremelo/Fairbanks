@@ -11,11 +11,11 @@ for(k=0;  k < 4; k+=1)
 	if minus_alpha[k] > 0 {minus_alpha[k]-=0.05}
 }
 
-if global.food_in_stomach=0 {speedWalk=1    - (crouching*0.25) global.chop_speed=0.25}
-if global.food_in_stomach=1 {speedWalk=1.05 - (crouching*0.25) global.chop_speed=0.3}
-if global.food_in_stomach=2 {speedWalk=1.1  - (crouching*0.25) global.chop_speed=0.35}
-if global.food_in_stomach=3 {speedWalk=1.15 - (crouching*0.25) global.chop_speed=0.4}
-if global.food_in_stomach=4 {speedWalk=1.2  - (crouching*0.25) global.chop_speed=0.5}
+if global.food_in_stomach=0 {speedWalk=1     - (crouching*0.25)  global.chop_speed=0.25}
+if global.food_in_stomach=1 {speedWalk=1.08  - (crouching*0.25)  global.chop_speed=0.3}
+if global.food_in_stomach=2 {speedWalk=1.16  - (crouching*0.25)  global.chop_speed=0.35}
+if global.food_in_stomach=3 {speedWalk=1.24  - (crouching*0.25)  global.chop_speed=0.4}
+if global.food_in_stomach=4 {speedWalk=1.36  - (crouching*0.25)  global.chop_speed=0.5}
 
 if global.food_in_stomach < 0 {global.food_in_stomach=0}
 for(j=0; j < 4; j+=1) {if items_scale[j] > 1 {items_scale[j]-=0.05}}
@@ -106,7 +106,7 @@ if keyboard_check_pressed(ord("H"))
 		blue_alpha[3]=1.2
 		minus_alpha[2]=2
 		minus_alpha[3]=2
-		player_hp+=50
+		player_hp+=100
 	}
 	else
 	{
@@ -173,7 +173,7 @@ if keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_escape)
 {
 	instance_create_layer(x,y,"Main",obj_menu_pause)
 }
-player_hp=100
+
 #endregion
 #region DEATH.
 
@@ -193,7 +193,7 @@ if player_hp <= 0
 #endregion
 #region SUCCESS.
 
-if x > 6900 {with (obj_wind_gust) {instance_destroy()}}
+if x > 6800 {with (obj_wind_gust) {instance_destroy()}}
 
 if x > 7200
 {

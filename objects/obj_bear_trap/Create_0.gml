@@ -7,6 +7,6 @@ frame=0
 scale=1
 alpha=1
 count=0
-white_alpha=random(0.96)
+white_alpha=random(0.93)
 
-if chance(50) {white_alpha=random(0.96)}
+if chance(10) {white_alpha=random(0.93)}

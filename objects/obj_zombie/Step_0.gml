@@ -4,7 +4,7 @@ depth=-y
 
 if instance_exists(obj_player)
 {
-	max_spd = 1.04 + (obj_player.speedWalk*0.21)
+	max_spd = 1.02 + (obj_player.speedWalk*0.21)
 }
 
 if on_screen() {mask=sprite_index} else {mask=spr_blank}
@@ -23,7 +23,7 @@ if instance_exists(obj_player)
 		
 		obj=instance_create_layer(x,y-7,"Main",obj_zombie_spew)
 		obj.direction=direction
-		alarm[3]=64+irandom(6)
+		alarm[3]=85+irandom(6)
 		spewed=true
 	}
 }
@@ -31,7 +31,7 @@ if instance_exists(obj_player)
 if chasing
 {
 	chase_count+=1
-	if chase_count > 1300 {chasing=false}
+	if chase_count > 1200 {chasing=false}
 }
 
 var _totalFrames = sprite_get_number(sprite_index) / 4
